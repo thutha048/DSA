@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define ID_LENGTH 10
+#define NAME_LENGTH 40
+typedef struct Student_t {
+    char id[ID_LENGTH];
+    char name[NAME_LENGTH];
+    int grade;
+    struct Student_t *next;
+} Student;
